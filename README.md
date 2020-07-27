@@ -12,7 +12,7 @@ This template includes SAP internal component
 
 ```bash
 npm install
-npm run build:mta
+npm run build
 ```
 
 ## Deploy
