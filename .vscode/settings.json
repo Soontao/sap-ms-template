@@ -4,5 +4,6 @@
     "source.organizeImports": true
   },
   "javascript.format.enable": false,
-  "editor.insertSpaces": true
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2
 }
