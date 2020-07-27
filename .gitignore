@@ -33,3 +33,6 @@ logs/
 *.crt
 *.key
 gen
+mta_archives
+
+.DS_Store

@@ -6,7 +6,7 @@
  */
 module.exports = (srv) => {
 
-  const { Examples } = srv.entities; // so access the table projection by service
+  const { Examples } = srv.entities; // access the table projection by service
 
   srv.before('CREATE', Examples, _ctx => {
     // event triggered before record saving to DB

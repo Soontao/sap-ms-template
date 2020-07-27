@@ -1,0 +1,49 @@
+## Generated mta.yaml based on template version 0.2.0
+## appName = example-service
+## language=nodejs; multiTenant=false
+_schema-version: '3.1'
+ID: example-service
+version: 1.0.0
+description: "example-service-project"
+
+# document:
+# https://help.sap.com/viewer/4505d0bdaf4948449b7f7379d24d0f0d/2.0.03/en-US/4050fee4c469498ebc31b10f2ae15ff2.html
+      
+modules:
+ # --------------------- SERVICE MODULE ------------------------
+ -  name: srv
+ # ------------------------------------------------------------
+    type: javascript.nodejs
+    path: example-service
+    build-parameters:
+      ignore: 
+        - node_modules
+        - gen
+    parameters:
+      memory: 256M
+      app-name: example-service-srv
+    properties:
+      EXIT: 1 
+    requires:
+      - name: db-deployer
+      - name: schema
+
+ -  name: db-deployer
+    type: com.sap.xs.hdi
+    path: example-service/gen/db  
+    parameters:
+      app-name: example-service-db-deployer
+      memory: 128M
+    requires:
+      - name: schema
+
+resources:
+# ------------------------------------------------------------
+ -  name: schema
+# ------------------------------------------------------------
+    type: com.sap.xs.hdi-container
+    parameters:
+      service: hana
+      service-name: example-service-hdi-container
+      service-plan: hdi-shared
+

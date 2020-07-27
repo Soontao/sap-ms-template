@@ -1,10 +1,12 @@
 {
-  "name": "service",
+  "name": "example-service",
   "version": "1.0.0",
-  "description": "A simple CAP project.",
-  "repository": "<Add your repository here>",
+  "description": "Example Service",
   "license": "UNLICENSED",
   "private": true,
+  "engines": {
+    "node": "^10"
+  },
   "dependencies": {
     "@sap/audit-logging": "3.1.0",
     "@sap/cds": "^3.34.2",
@@ -15,13 +17,13 @@
     "@sap/cds-rest": "1.6.2",
     "@sap/cds-services": "1.27.1",
     "@sap/cds-sql": "1.24.0",
-    "@sap/ct-audit": "~1.8.0",
-    "@sap/ct-cf-client": "~1.16.0",
-    "@sap/ct-security": "~1.11.0",
-    "@sap/ct-server": "~2.10.0"
+    "@sap/hana-client": "^2.5",
+    "express": "^4.17.1"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "cds run"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "sqlite3": "^5.0.0"
+  }
 }

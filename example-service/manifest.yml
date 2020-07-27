@@ -1,0 +1,7 @@
+---
+applications:
+- name: example-service-srv
+  path: .
+  memory: 128M
+  services:
+  - example-service-db-hdi-container

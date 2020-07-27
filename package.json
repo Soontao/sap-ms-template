@@ -10,10 +10,13 @@
     "node": "10.x"
   },
   "scripts": {
-    "lint": "eslint --fix *service"
+    "lint": "eslint --fix *service",
+    "build": "npm run build:db && mbt build",
+    "build:db": "cross-env NODE_ENV=production npx cds build -in example-service"
   },
   "devDependencies": {
     "@sap/eslint-config-s4p": "^2.5.0",
+    "cross-env": "^7.0.2",
     "eslint": "^7.5.0"
   }
 }
