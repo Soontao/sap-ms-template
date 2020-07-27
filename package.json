@@ -1,0 +1,19 @@
+{
+  "name": "micro-service-template",
+  "description": "micro service - <name>",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "repository": {
+    "type:": "git"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "scripts": {
+    "lint": "eslint --fix *service"
+  },
+  "devDependencies": {
+    "@sap/eslint-config-s4p": "^2.5.0",
+    "eslint": "^7.5.0"
+  }
+}

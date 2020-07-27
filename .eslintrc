@@ -1,0 +1,27 @@
+{
+    "extends": "@sap/eslint-config-s4p",
+    "env": {
+        "node": true,
+        "es6": true,
+        "jest": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2017
+    },
+    "globals": {
+        "SELECT": true,
+        "INSERT": true,
+        "UPDATE": true,
+        "DELETE": true,
+        "CREATE": true,
+        "DROP": true,
+        "cds": true
+    },
+    "rules": {
+        "no-console": "off",
+        "require-atomic-updates": "off",
+        "valid-jsdoc":"off",
+        "no-tabs":"error",
+        "indent":["error",2]
+    }
+}
