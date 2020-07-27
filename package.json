@@ -17,6 +17,7 @@
   "devDependencies": {
     "@sap/eslint-config-s4p": "^2.5.0",
     "cross-env": "^7.0.2",
-    "eslint": "^7.5.0"
+    "eslint": "^7.5.0",
+    "mbt": "^1.0.15"
   }
 }
