@@ -1,7 +1,5 @@
 # SAP Micro-Service Template
 
-This template includes SAP internal component
-
 ## Stack
 
 * `cap` framework integration
